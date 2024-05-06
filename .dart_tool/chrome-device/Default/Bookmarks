@@ -1,0 +1,66 @@
+{
+   "checksum": "3800f2809e7041a9ef3645c311acca51",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13355235739150332",
+            "date_last_used": "0",
+            "guid": "5ad2d880-ce52-4f60-ba35-2071f5ed2964",
+            "id": "8",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ГОМДОЛ ҮНДСЭН ЖАГСААЛТ",
+            "type": "url",
+            "url": "https://k2.prokuror.mn/Runtime/Runtime/Form/[zbmns].[frm].[GOMDOL__UNDSEN__JAGSAALT]/?"
+         }, {
+            "date_added": "13357233557561690",
+            "date_last_used": "0",
+            "guid": "ea705e23-9644-46d0-b93c-b731f3a23eae",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ЗБМНС - Нэвтрэх",
+            "type": "url",
+            "url": "https://k2.prokuror.mn/Identity/STS/Forms/Account/Login?ReturnUrl=%2fIdentity%2fsts%2fForms%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttps%253a%252f%252fk2.prokuror.mn%252fRuntime%252f%26wctx%3drm%253d1%2526id%253dk2passive%2526ru%253d_trust%25252fspauthorize.aspx%25253fsession%25253daae33f20-cc00-454b-9cdd-31e38c345c67%252526_spInt%25253d1%26wct%3d2024-04-10T14%253a38%253a52Z%26wreply%3dhttps%253a%252f%252fk2.prokuror.mn%252fRuntime%252f&wa=wsignin1.0&wtrealm=https%3a%2f%2fk2.prokuror.mn%2fRuntime%2f&wctx=rm%3d1%26id%3dk2passive%26ru%3d_trust%252fspauthorize.aspx%253fsession%253daae33f20-cc00-454b-9cdd-31e38c345c67%2526_spInt%253d1&wct=2024-04-10T14%3a38%3a52Z&wreply=https%3a%2f%2fk2.prokuror.mn%2fRuntime%2f"
+         } ],
+         "date_added": "13359382969593637",
+         "date_last_used": "0",
+         "date_modified": "13357233557561690",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13357985371658042",
+            "date_last_used": "0",
+            "guid": "e056f04c-e15a-4273-80d5-bab45045585a",
+            "id": "7",
+            "name": "K2 Designer",
+            "type": "url",
+            "url": "https://k2.prokuror.mn/designer/#action=properties&guid=32e62a66-2476-4adf-8527-286588fa1d21&datatype=form&ts=562"
+         } ],
+         "date_added": "13359382969593641",
+         "date_last_used": "0",
+         "date_modified": "13357985371658042",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13359382969593643",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
