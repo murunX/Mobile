@@ -65,6 +65,29 @@ io.on("connection", (socket) => {
     }
   });
 
+// Server-side code
+socket.on("exitRoom", async ({ roomId, nickname }) => {
+  try {
+    let room = await Room.findById(roomId);
+    
+    // Find the index of the player to remove
+    const playerIndex = room.players.findIndex(player => player.nickname === nickname);
+    if (playerIndex !== -1) {
+      // Remove the player from the room
+      room.players.splice(playerIndex, 1);
+      await room.save();
+      
+      // Notify other players in the room about the player exit
+      io.to(roomId).emit("exitRoomSuccess", room.players);
+      io.to(roomId).emit("updateRoom", room);
+      console.log("garsan bn",room.players)
+    }
+  } catch (e) {
+    console.log(e);
+  }
+});
+
+
   socket.on("makeChoices", async ({ choice, roomId }) => {
     try {
         let room = await Room.findById(roomId);
@@ -157,8 +180,9 @@ io.on('connection', (socket) => {
         (playerr) => playerr.socketID == winnerSocketId
       );
       player.points += 1;
+      console.log(player.points);
       room = await room.save();
-
+       
       if (player.points >= room.maxRounds) {
         io.to(roomId).emit("endGame", player);
       } else {

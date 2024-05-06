@@ -30,6 +30,15 @@ class SocketMethods {
     }
   }
 
+  void exitRoom(String nickname, String roomId) {
+    if (nickname.isNotEmpty && roomId.isNotEmpty) {
+      _socketClient.emit('exitRoom', {
+        'nickname': nickname,
+        'roomId': roomId,
+      });
+    }
+  }
+
   void makeChoices(String choice, String roomId) {
     if (choice.isNotEmpty && roomId.isNotEmpty) {
       _socketClient.emit('makeChoices', {
@@ -52,6 +61,14 @@ class SocketMethods {
 
   void joinRoomSuccessListener(BuildContext context) {
     _socketClient.on('joinRoomSuccess', (room) {
+      Provider.of<RoomDataProvider>(context, listen: false)
+          .updateRoomData(room);
+      Navigator.pushNamed(context, GameScreen.routeName);
+    });
+  }
+
+  void exitRoomSuccessListener(BuildContext context) {
+    _socketClient.on('exitRoomSuccess', (room) {
       Provider.of<RoomDataProvider>(context, listen: false)
           .updateRoomData(room);
       Navigator.pushNamed(context, GameScreen.routeName);

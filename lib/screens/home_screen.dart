@@ -27,20 +27,28 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Responsive(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CustomButton(
-              onTap: () => navigateToBotScreen(context),
-              text: 'Боттой тоглох',
-            ),
-            const SizedBox(height: 20),
-            CustomButton(
-              onTap: () => navigateToMainScreen(context),
-              text: 'Oнлайнаар тоглох',
-            ),
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/background_image.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Responsive(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomButton(
+                onTap: () => navigateToBotScreen(context),
+                text: 'Боттой тоглох',
+              ),
+              const SizedBox(height: 20),
+              CustomButton(
+                onTap: () => navigateToMainScreen(context),
+                text: 'Oнлайнаар тоглох',
+              ),
+            ],
+          ),
         ),
       ),
     );

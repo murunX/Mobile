@@ -1,5 +1,5 @@
-name: mp_tictactoe
-description: A new Flutter project.
+name: BieDaalt
+description: BieDaalt 2024.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -36,11 +36,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   socket_io_client: ^1.0.2
   provider: ^6.0.2
-
+  lottie: ^3.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.13.1
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -91,3 +91,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  flutter_launcer_icons:
+    android: "Launcher_icon"
+    ios: "AppIcon"
+    image_path: "png.png"

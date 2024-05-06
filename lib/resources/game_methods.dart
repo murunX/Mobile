@@ -21,36 +21,65 @@ class GameMethods {
       // Check win conditions
       if (player1Choice == player2Choice) {
         winner = '';
-        showGameDialog(context, 'Тэнцсэн');
       } else if ((player1Choice == 'Rock' && player2Choice == 'Scissor') ||
           (player1Choice == 'Scissor' && player2Choice == 'Paper') ||
           (player1Choice == 'Paper' && player2Choice == 'Rock')) {
         winner = 'player1';
-        showGameDialog(context, '${roomDataProvider.player1.nickname} Хожлоо');
+        // player1Point += 1;
+        // showGameDialog(context, '${roomDataProvider.player1.nickname} Хожлоо');
       } else {
         winner = 'player2';
-        showGameDialog(context, '${roomDataProvider.player2.nickname} Хожлоо');
+        // player2Point += 1;
+        // showGameDialog(context, '${roomDataProvider.player2.nickname} Хожлоо');
       }
     }
 
     // Handle the winner
-    if (winner == '') {
-      if (winner == 'player1') {
-        showGameDialog(context, '${roomDataProvider.player1.nickname} Хожлоо!');
-        socketClient.emit('winner', {
-          'winnerSocketId': roomDataProvider.player1.socketID,
-          'roomId': roomDataProvider.roomData['_id'],
-        });
-      } else if (winner == 'player2') {
-        showGameDialog(context, '${roomDataProvider.player2.nickname} Хожлоо!');
-        socketClient.emit('winner', {
-          'winnerSocketId': roomDataProvider.player2.socketID,
-          'roomId': roomDataProvider.roomData['_id'],
-        });
-      } else {
-        showGameDialog(context, 'Тэнцсэн');
-      }
+
+    if (winner == 'player1') {
+      showGameDialog(context, '${roomDataProvider.player1.nickname} Хожлоо!');
+      socketClient.emit('winner', {
+        'winnerSocketId': roomDataProvider.player1.socketID,
+        'roomId': roomDataProvider.roomData['_id'],
+      });
+    } else if (winner == 'player2') {
+      showGameDialog(context, '${roomDataProvider.player2.nickname} Хожлоо!');
+      socketClient.emit('winner', {
+        'winnerSocketId': roomDataProvider.player2.socketID,
+        'roomId': roomDataProvider.roomData['_id'],
+      });
+    } else {
+      showGameDialog(context, 'Тэнцсэн');
     }
+  }
+
+  void showGameDialog(BuildContext context, String text) {
+    showDialog(
+        barrierDismissible: false,
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text(text),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text(
+                  'Дахин тоглох',
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  navigateToMainScreen(context);
+                },
+                child: const Text(
+                  'Буцах',
+                ),
+              ),
+            ],
+          );
+        });
   }
 
   void clearBoard(BuildContext context) {
