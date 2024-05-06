@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/models/player.dart';
+import 'package:BieDaalt/models/player.dart';
 
 class RoomDataProvider extends ChangeNotifier {
   Map<String, dynamic> _roomData = {};

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/provider/room_data_provider.dart';
-import 'package:mp_tictactoe/screens/create_room_screen.dart';
-import 'package:mp_tictactoe/screens/game_screen.dart';
-import 'package:mp_tictactoe/screens/home_screen.dart';
-import 'package:mp_tictactoe/screens/join_room_screen.dart';
-import 'package:mp_tictactoe/screens/main_menu_screen.dart';
-import 'package:mp_tictactoe/utils/colors.dart';
-import 'package:mp_tictactoe/views/splash_screen.dart';
+import 'package:BieDaalt/provider/room_data_provider.dart';
+import 'package:BieDaalt/screens/create_room_screen.dart';
+import 'package:BieDaalt/screens/game_screen.dart';
+import 'package:BieDaalt/screens/home_screen.dart';
+import 'package:BieDaalt/screens/join_room_screen.dart';
+import 'package:BieDaalt/screens/main_menu_screen.dart';
+import 'package:BieDaalt/utils/colors.dart';
+import 'package:BieDaalt/views/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {

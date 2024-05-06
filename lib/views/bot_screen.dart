@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/utils/game.dart';
-import 'package:mp_tictactoe/views/bot_play_screen.dart';
-import 'package:mp_tictactoe/widgets/button.dart';
+import 'package:BieDaalt/utils/game.dart';
+import 'package:BieDaalt/views/bot_play_screen.dart';
+import 'package:BieDaalt/widgets/button.dart';
 
 class BotScreen extends StatefulWidget {
   const BotScreen({Key? key}) : super(key: key);

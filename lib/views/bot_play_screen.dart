@@ -1,10 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/screens/home_screen.dart';
-import 'package:mp_tictactoe/utils/game.dart';
-import 'package:mp_tictactoe/views/bot_screen.dart';
-import 'package:mp_tictactoe/widgets/button.dart';
+import 'package:BieDaalt/screens/home_screen.dart';
+import 'package:BieDaalt/utils/game.dart';
+import 'package:BieDaalt/views/bot_screen.dart';
+import 'package:BieDaalt/widgets/button.dart';
 
 // ignore: must_be_immutable
 class BotChooseScreen extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/resources/socket_methods.dart';
-import 'package:mp_tictactoe/screens/main_menu_screen.dart';
+import 'package:BieDaalt/resources/socket_methods.dart';
+import 'package:BieDaalt/screens/main_menu_screen.dart';
 
 final SocketMethods _socketMethods = SocketMethods();
 final TextEditingController _gameIdController = TextEditingController();

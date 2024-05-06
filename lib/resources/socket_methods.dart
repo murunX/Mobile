@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mp_tictactoe/provider/room_data_provider.dart';
-import 'package:mp_tictactoe/resources/game_methods.dart';
-import 'package:mp_tictactoe/resources/socket_client.dart';
-import 'package:mp_tictactoe/screens/game_screen.dart';
-import 'package:mp_tictactoe/utils/utils.dart';
+import 'package:BieDaalt/provider/room_data_provider.dart';
+import 'package:BieDaalt/resources/game_methods.dart';
+import 'package:BieDaalt/resources/socket_client.dart';
+import 'package:BieDaalt/screens/game_screen.dart';
+import 'package:BieDaalt/utils/utils.dart';
 import 'package:provider/provider.dart';
 import 'package:socket_io_client/socket_io_client.dart';
 
