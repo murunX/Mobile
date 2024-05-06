@@ -91,7 +91,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-  flutter_launcer_icons:
+flutter_launcer_icons:
     android: "Launcher_icon"
     ios: "AppIcon"
     image_path: "png.png"

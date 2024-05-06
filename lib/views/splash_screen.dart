@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:lottie/lottie.dart';
-import 'package:BieDaalt/screens/main_menu_screen.dart';
+import 'package:BieDaalt/screens/home_screen.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -35,7 +35,7 @@ class _SplashState extends State<Splash> {
   }
 
   void route() {
-    Navigator.pushReplacementNamed(context, MainMenuScreen.routeName);
+    Navigator.pushReplacementNamed(context, HomeScreen.routeName);
   }
 
   @override
