@@ -1,0 +1,4 @@
+#Mon May 06 23:59:20 ULAT 2024
+base.0=C\:\\Users\\warlo\\OneDrive\\Desktop\\hicheel\\Mobile-main\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
