@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:BieDaalt/resources/socket_methods.dart';
+import 'package:BieDaalt/resource/socket_methods.dart';
 import 'package:BieDaalt/responsive/responsive.dart';
 import 'package:BieDaalt/widgets/custom_button.dart';
 import 'package:BieDaalt/widgets/custom_text.dart';
@@ -38,6 +38,16 @@ class _JoinRoomScreenState extends State<JoinRoomScreen> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Responsive(
         child: Container(
           margin: const EdgeInsets.symmetric(

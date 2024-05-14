@@ -1,15 +1,21 @@
-2024/05/07-04:16:41.982 3954 Reusing MANIFEST C:\Users\hatsu\AppData\Local\Temp\flutter_tools.f66c5a0\flutter_tools_chrome_device.772cb606\Default\shared_proto_db/MANIFEST-000001
-2024/05/07-04:16:41.983 3954 Recovering log #21
-2024/05/07-04:16:41.983 3954 Reusing old log C:\Users\hatsu\AppData\Local\Temp\flutter_tools.f66c5a0\flutter_tools_chrome_device.772cb606\Default\shared_proto_db/000021.log 
-2024/05/07-04:16:41.984 3954 Delete type=0 #3
-2024/05/07-04:16:41.984 3954 Delete type=0 #4
-2024/05/07-04:16:41.984 3954 Delete type=2 #7
-2024/05/07-04:16:41.984 3954 Delete type=0 #7
-2024/05/07-04:16:41.984 3954 Delete type=2 #8
-2024/05/07-04:16:41.984 3954 Delete type=2 #9
-2024/05/07-04:16:41.984 3954 Delete type=0 #9
-2024/05/07-04:16:41.984 3954 Delete type=2 #10
-2024/05/07-04:16:41.984 3954 Delete type=0 #11
-2024/05/07-04:16:41.985 3954 Delete type=2 #12
-2024/05/07-04:16:41.985 3954 Delete type=0 #14
-2024/05/07-04:16:41.985 3954 Delete type=0 #18
+2024/05/14-12:16:19.927 2dc Reusing MANIFEST C:\Users\hatsu\AppData\Local\Temp\flutter_tools.1709f837\flutter_tools_chrome_device.c80c8756\Default\shared_proto_db/MANIFEST-000001
+2024/05/14-12:16:19.928 2dc Recovering log #27
+2024/05/14-12:16:19.930 2dc Reusing old log C:\Users\hatsu\AppData\Local\Temp\flutter_tools.1709f837\flutter_tools_chrome_device.c80c8756\Default\shared_proto_db/000027.log 
+2024/05/14-12:16:19.931 2dc Delete type=0 #3
+2024/05/14-12:16:19.931 2dc Delete type=0 #4
+2024/05/14-12:16:19.931 2dc Delete type=2 #7
+2024/05/14-12:16:19.931 2dc Delete type=0 #7
+2024/05/14-12:16:19.931 2dc Delete type=2 #8
+2024/05/14-12:16:19.931 2dc Delete type=2 #9
+2024/05/14-12:16:19.931 2dc Delete type=0 #9
+2024/05/14-12:16:19.932 2dc Delete type=2 #10
+2024/05/14-12:16:19.932 2dc Delete type=0 #11
+2024/05/14-12:16:19.932 2dc Delete type=2 #12
+2024/05/14-12:16:19.932 2dc Delete type=0 #14
+2024/05/14-12:16:19.932 2dc Delete type=2 #16
+2024/05/14-12:16:19.932 2dc Delete type=0 #18
+2024/05/14-12:16:19.932 2dc Delete type=2 #19
+2024/05/14-12:16:19.932 2dc Delete type=0 #21
+2024/05/14-12:16:19.932 2dc Delete type=2 #22
+2024/05/14-12:16:19.932 2dc Delete type=0 #24
+2024/05/14-12:16:19.932 2dc Delete type=2 #25

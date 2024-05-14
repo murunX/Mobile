@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:BieDaalt/resources/socket_methods.dart';
+import 'package:BieDaalt/resource/socket_methods.dart';
 import 'package:BieDaalt/screens/main_menu_screen.dart';
 
 final SocketMethods _socketMethods = SocketMethods();
 final TextEditingController _gameIdController = TextEditingController();
 final TextEditingController _nameController = TextEditingController();
+
 void navigateToMainScreen(BuildContext context) {
   Navigator.push(
     context,
@@ -20,13 +21,36 @@ void showSnackBar(BuildContext context, String content) {
   );
 }
 
-void showGameDialog(BuildContext context, String text) {
+void showGameDialog(
+  BuildContext context,
+  String text,
+  String player1ChoiceImagePath,
+  String player2ChoiceImagePath,
+) {
   showDialog(
     barrierDismissible: false,
     context: context,
     builder: (context) {
       return AlertDialog(
         title: Text(text),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('Player 1 Choice:'),
+            Image.asset(
+              player1ChoiceImagePath,
+              width: 50,
+              height: 50,
+            ),
+            SizedBox(height: 10),
+            Text('Player 2 Choice:'),
+            Image.asset(
+              player2ChoiceImagePath,
+              width: 50,
+              height: 50,
+            ),
+          ],
+        ),
         actions: [
           TextButton(
             onPressed: () {
@@ -34,13 +58,13 @@ void showGameDialog(BuildContext context, String text) {
                 _nameController.text,
                 _gameIdController.text,
               );
-              Navigator.pop(context); // Close the dialog
+              Navigator.pop(context);
             },
             child: const Text('Буцах'),
           ),
           TextButton(
             onPressed: () {
-              Navigator.pop(context); // Close the dialog
+              Navigator.pop(context);
             },
             child: const Text('Үргэлжлүүлэх'),
           ),

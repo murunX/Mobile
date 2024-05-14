@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:BieDaalt/Layouts/Pages/page_start_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -35,7 +36,7 @@ class _SplashState extends State<Splash> {
   }
 
   void route() {
-    Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+    Navigator.pushReplacementNamed(context, StartScreen.routeName);
   }
 
   @override
@@ -56,7 +57,7 @@ class _SplashState extends State<Splash> {
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
                 if (snapshot.hasError) {
-                  return Center(child: Text('Error loading animation'));
+                  return Center(child: Text('Интернэт холболтоо шалгана уу'));
                 } else {
                   return Lottie(composition: snapshot.data!);
                 }
@@ -71,7 +72,7 @@ class _SplashState extends State<Splash> {
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
                 if (snapshot.hasError) {
-                  return Center(child: Text('Error loading animation'));
+                  return Center(child: Text('Интернэт холболтоо шалгана уу'));
                 } else {
                   return Lottie(composition: snapshot.data!);
                 }

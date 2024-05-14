@@ -37,7 +37,7 @@ io.on("connection", (socket) => {
   socket.on("joinRoom", async ({ nickname, roomId }) => {
     try {
       if (!roomId.match(/^[0-9a-fA-F]{24}$/)) {
-        socket.emit("errorOccurred", "Please enter a valid room ID.");
+        socket.emit("errorOccurred", "Өрөөний ID буруу байна.");
         return;
       }
       let room = await Room.findById(roomId);
@@ -57,7 +57,7 @@ io.on("connection", (socket) => {
       } else {
         socket.emit(
           "errorOccurred",
-          "The game is in progress, try again later."
+          "Энэ өрөөнд тоглолт явагдаж байна."
         );
       }
     } catch (e) {

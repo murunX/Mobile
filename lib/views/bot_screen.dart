@@ -5,7 +5,7 @@ import 'package:BieDaalt/widgets/button.dart';
 
 class BotScreen extends StatefulWidget {
   const BotScreen({Key? key}) : super(key: key);
-
+  // static String routeName = '/bot-screen';
   @override
   _BotScreenState createState() => _BotScreenState();
 }
@@ -32,7 +32,7 @@ class _BotScreenState extends State<BotScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "SCORE",
+                    "Оноо",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 32.0,
@@ -66,7 +66,7 @@ class _BotScreenState extends State<BotScreen> {
                       child: Hero(
                         tag: "Rock",
                         child: gameBtn(() {
-                          print("you choosed rock");
+                          print("Та чулуу сонголоо");
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -85,7 +85,7 @@ class _BotScreenState extends State<BotScreen> {
                       child: Hero(
                         tag: "Scisors",
                         child: gameBtn(() {
-                          print("you choosed scisors");
+                          print("Та хайч сонголоо");
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -104,7 +104,7 @@ class _BotScreenState extends State<BotScreen> {
                       child: Hero(
                         tag: "Paper",
                         child: gameBtn(() {
-                          print("you choosed paper");
+                          print("Та цаас сонголоо");
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -123,11 +123,11 @@ class _BotScreenState extends State<BotScreen> {
               width: double.infinity,
               child: RawMaterialButton(
                 padding: EdgeInsets.all(24.0),
-                onPressed: () {},
+                onPressed: () => navigateToMainScreen(context),
                 shape: StadiumBorder(
                     side: BorderSide(color: Colors.white, width: 5)),
                 child: Text(
-                  "Дүрэм",
+                  "Буцах",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 26.0,

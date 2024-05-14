@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:BieDaalt/Layouts/Pages/page_start_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:BieDaalt/screens/home_screen.dart';
 import 'package:BieDaalt/utils/game.dart';
@@ -17,7 +18,7 @@ class BotChooseScreen extends StatefulWidget {
 void navigateToMainScreen(BuildContext context) {
   Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => HomeScreen()),
+    MaterialPageRoute(builder: (context) => StartScreen()),
   );
 }
 
@@ -59,7 +60,7 @@ class _BotChooseScreen extends State<BotChooseScreen> {
       default:
     }
     if (GameChoice.gameRules[widget.gameChoice.type]![robotChoice] ==
-        "Тоглог яллаа") {
+        "Тоглогч яллаа") {
       setState(() {
         Game.gameScore++;
       });

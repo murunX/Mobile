@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:BieDaalt/resources/socket_methods.dart';
+import 'package:BieDaalt/resource/socket_methods.dart';
 import 'package:BieDaalt/responsive/responsive.dart';
 import 'package:BieDaalt/widgets/custom_button.dart';
 import 'package:BieDaalt/widgets/custom_text.dart';
@@ -34,6 +34,16 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       body: Responsive(
         child: Container(
           margin: const EdgeInsets.symmetric(
@@ -60,10 +70,11 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
               ),
               SizedBox(height: size.height * 0.045),
               CustomButton(
-                  onTap: () => _socketMethods.createRoom(
-                        _nameController.text,
-                      ),
-                  text: 'Нээх'),
+                onTap: () => _socketMethods.createRoom(
+                  _nameController.text,
+                ),
+                text: 'Нээх',
+              ),
             ],
           ),
         ),

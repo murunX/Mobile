@@ -7,19 +7,19 @@ class GameChoice {
   String? type = "";
   static var gameRules = {
     "Rock": {
-      "Rock": "It's a Draw",
-      "Paper": "You Lose",
-      "Scisors": "You Win",
+      "Rock": "Тэнцлээ",
+      "Paper": "Та хожигдлоо",
+      "Scisors": "Та хожлоо",
     },
     "Paper": {
-      "Rock": "You Win",
-      "Paper": "It's a Draw",
-      "Scisors": "You Lose",
+      "Rock": "Та хожлоо",
+      "Paper": "Тэнцлээ",
+      "Scisors": "Та хожигдлоо",
     },
     "Scisors": {
-      "Rock": "You Lose",
-      "Paper": "You Win",
-      "Scisors": "It's a Draw",
+      "Rock": "Та хожигдлоо",
+      "Paper": "Та хожлоо",
+      "Scisors": "Тэнцлээ",
     }
   };
   GameChoice(this.type);

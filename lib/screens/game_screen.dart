@@ -1,7 +1,7 @@
 // game_screen.dart
 import 'package:flutter/material.dart';
 import 'package:BieDaalt/provider/room_data_provider.dart';
-import 'package:BieDaalt/resources/socket_methods.dart';
+import 'package:BieDaalt/resource/socket_methods.dart';
 import 'package:BieDaalt/views/scoreboard.dart';
 import 'package:BieDaalt/views/tictactoe_board.dart';
 import 'package:BieDaalt/views/waiting_lobby.dart';
